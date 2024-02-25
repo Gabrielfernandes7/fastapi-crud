@@ -1,4 +1,5 @@
 from sqlalchemy import Table, Column
+from config.db import engine
 
 # types
 from sqlalchemy.sql.sqltypes import Integer, String
@@ -12,3 +13,5 @@ users = Table(
     Column("email", String(255)),
     Column("password", String(255))
 )
+
+meta.create_all(engine)
