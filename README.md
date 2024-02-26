@@ -16,3 +16,5 @@ source venv/bin/activate
 ```py
 uvicorn index:app --reload
 ```
+
+mysql+pymysql://root:Password272801%23%40!@localhost:3306/fastapidb
